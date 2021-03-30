@@ -1,0 +1,71 @@
+.collections {
+    margin-bottom: 135px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        min-height: 474px;
+        flex: 1;
+        overflow: hidden;
+        margin-right: 30px;
+        background: url('../img/bg/pattern.png') center center / 500px;
+        position: relative;
+
+        &--type-guys:before {
+            background: url('../img/collections/collection_man.png') center center / contain no-repeat;
+        }
+
+        &--type-girls:before {
+            background: url('../img/collections/collection_woman.png') center center / contain no-repeat;
+            top: -30%;
+            width: 80%;
+            left: -25%;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 170%;
+            width: 60%;
+            top: -17%;
+            left: -15%;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 74px 13% 74px 44%;
+        text-decoration: none;
+        color: inherit;
+        font-size: 15px;
+        position: relative;
+        box-sizing: border-box;
+        height: 100%;
+
+        &:hover .btn {
+            background: var(--red);
+            color: #fff;
+        }
+    }
+
+    &__title {
+        font-family: var(--titlesFont);
+        font-size: 70px;
+        font-weight: bold;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 11px;
+    }
+
+    &__desc {
+        margin-bottom: 28px;
+    }
+}

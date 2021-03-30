@@ -1,101 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="1440">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./main.css">
-    <title>Home page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Main page</title>
 </head>
+
 <body>
     <div class="wrapper">
         <section class="hero">
 
             <header class="header">
-                <a class="logo" href="#">
+                <a class="logo__link" href="#">
                     <img class="logo__pic" src="./img/content/logos/logo-main.png" alt="lost shirt logo">
-                </a>
-                <a class="mail" href="mailto:lostshirt@mail.ru">
-                    <div class="mail__title">По всем вопросам пишите на</div>
-                    <div class="mail__content">lostshirt@mail.ru</div>
                 </a>
             </header>
 
-            <div class="hero__content">
-                <ul class="fade-slider">
-                    <li class="fade-slider__item fade-slider__item--style-tshirt fade-slider__item--visible">
-                        <div class="fade-slider__text">
-                            <h1 class="lined-text">
-                                <div class="lined-text__word">Три</div>
-                                <div class="lined-text__word">Футболки</div>
-                                <div class="lined-text__word lined-text__word--color-yellow">По цене</div>
-                                <div class="lined-text__word lined-text__word--color-yellow">Двух</div>
-                            </h1>
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide swiper-slide-tshirt">
+                            <div class="swiper-slide__img">
+                                <img src="img/content/hero/slider_pic_1.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <span>три</span>
+                                <span>футболки</span>
+                                <span class="yellow">по цене</span>
+                                <span class="yellow">двух</span>
+                            </div>
                         </div>
-                    </li>
-                    <li class="fade-slider__item fade-slider__item--style-games">
-                        <div class="fade-slider__text">
-                            <h1 class="lined-text">
-                                <div class="lined-text__word">Любимые игры</div>
-                                <div class="lined-text__word lined-text__word--color-yellow">на лучших футболках</div>
-                            </h1>
+
+                        <div class="swiper-slide swiper-slide-games">
+                            <div class="swiper-slide__img">
+                                <img src="img/content/hero/slider_pic_2.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <span>Любимые игры</span>
+                                <span class="yellow">на лучших футболках</span>
+                            </div>
                         </div>
-                    </li>
-                    <li class="fade-slider__item fade-slider__item--style-presents">
-                        <div class="fade-slider__text">
-                            <h1 class="lined-text">
-                                <div class="lined-text__word">подарки</div>
-                                <div class="lined-text__word lined-text__word--color-yellow">для любимых</div>
-                            </h1>
+
+                        <div class="swiper-slide swiper-slide-presents">
+                            <div class="swiper-slide__img">
+                                <img src="img/content/hero/slider_pic_3.png" alt="">
+                            </div>
+                            <div class="swiper-slide__text">
+                                <span>Подарки</span>
+                                <span class="yellow">для любимых</span>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+
+                    </div>
+                </div>
             </div>
 
             <aside class="sidebar">
-                <a href="#" class="sidebar__hamburger">
-                    <svg class="sidebar__hamburger-icon">
-                        <use xlink:href="./img/icons-sprite.svg#bars"></use>
+
+                <button class="menu-icon menu-icon--close">
+                    <svg>
+                        <use xlink:href="./img/icons-sprite.svg#cross"></use>
                     </svg>
-                </a>
-                <div class="sidebar__header">
-                    <a href="#" class="logo">
-                        <img src="./img/content/logos/logo-main.png" alt="" class="logo__image">
-                    </a>
-                    <a href="#" class="sidebar__close">
-                        <svg class="sidebar__close-icon">
-                            <use xlink:href="./img/icons-sprite.svg#cross"></use>
-                        </svg>
-                    </a>
-                </div>
-                <nav class="side-menu sidebar__menu">
-                    <ul class="side-menu__list">
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Мужская коллекция</a>
+                </button>
+
+                <nav class="sidebar-menu">
+                    <ul class="nav-menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Мужская коллекция</a>
                         </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Женская коллекция</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Женская коллекция</a>
                         </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Детская коллекция</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Детская коллекция</a>
                         </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Популярные принты</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Популярные принты</a>
                         </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Новые принты</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Новые принты</a>
                         </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Специальные предложения</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Специальные предложения</a>
                         </li>
-                        <li class="side-menu__item">
-                            <a href="#" class="side-menu__link">Скоро в продаже</a>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item__link">Скоро в продаже</a>
                         </li>
                     </ul>
                 </nav>
+
             </aside>
+
+            <button class="menu-icon menu-icon--open">
+                <svg>
+                    <use xlink:href="./img/icons-sprite.svg#bars"></use>
+                </svg>
+            </button>
         </section>
 
         <section class="products">
@@ -160,7 +168,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item new popular bestsellers products__item--color-black products__item--size-double">
+                    <li
+                        class="products__item new popular bestsellers products__item--color-black products__item--size-double">
                         <div class="products__price">
                             <div class="products__price-amount">1 800</div>
                         </div>
@@ -222,7 +231,10 @@
                         <a href="#" class="collections__link">
                             <h2 class="collections__title">Женская коллекция</h2>
                             <div class="collections__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quaerat culpa dolorem quod quisquam dolore, aperiam error soluta non expedita maxime unde quae in hic saepe et perspiciatis odit? Asperiores.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Consequatur quaerat culpa dolorem quod quisquam dolore,
+                                aperiam error soluta non expedita maxime unde quae in hic saepe et perspiciatis odit?
+                                Asperiores.
                             </div>
                             <div class="btn">Просмотреть</div>
                         </a>
@@ -300,7 +312,8 @@
                             <div class="site-menu__text">Санкт-Петербург,<br>ул. Жуковского, д. 12</div>
                             <div class="site-menu__text">
                                 <a href="tel.:+78123157235" class="site-menu__text-row">Телефон: 8 (812) 315-72-35</a>
-                                <a href="mailto:support@yourwebsite.com" class="site-menu__text-row">Email: support@yourwebsite.com</a>
+                                <a href="mailto:support@yourwebsite.com" class="site-menu__text-row">Email:
+                                    support@yourwebsite.com</a>
                             </div>
 
                         </li>
@@ -351,10 +364,14 @@
             </div>
         </footer>
     </div>
-    <script src="./scripts/libs/isotope.pkgd.js"></script>
-    <script src="./scripts/sidebar-menu.js"></script>
-    <script src="./scripts/fade-slider.js"></script>
-    <script src="./scripts/filter.js"></script>
-</body>
-</html> 
+    
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/sidebar-menu.js"></script>
+    <!-- <script src="js/fade-slider.js"></script> -->
+    <script src="js/filter.js"></script>
+    <script src="js/script.js"></script>
 
+</body>
+
+</html>

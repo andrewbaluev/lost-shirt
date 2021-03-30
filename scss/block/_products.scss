@@ -1,0 +1,134 @@
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.filter__item {
+    margin-right: 40px;
+}
+
+.filter__item--active .filter__link {
+    color: var(--yellow);
+    background: var(--black);
+}
+
+.filter__item:last-child {
+    margin-right: 0;
+}
+
+.filter__link {
+    font-family: var(--titlesFont);
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 3px 20px;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.filter__link:hover {
+    color: var(--red);
+}
+
+.products {
+    margin-bottom: 160px;
+
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -28px;
+}
+
+.products__item {
+    width: 303px;
+    height: 386px;
+    background: var(--yellow);
+    margin-bottom: 35px;
+    margin-left: 28px;
+    position: relative;
+}
+
+.products__item--color-black {
+    background: #232323;
+}
+
+.products__item--color-black .products__price {
+    border-bottom-color: var(--yellow);
+}
+
+.products__item--color-black .products__price-amount {
+    color: #121212;
+}
+
+.products__item--size-double {
+    width: 630px;
+    height: 544px;
+}
+
+.products__price {
+    position: absolute;
+    top: 18px;
+    left: -6px;
+    width: 126px;
+    border-bottom: 45px solid #232323;
+    border-left: 5px solid transparent;
+    border-right: 2px solid transparent;
+    transform: rotate(-181deg);
+}
+
+.products__price-amount {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--titlesFont);
+    color: #fff;
+    transform: rotate(181deg);
+    position: absolute;
+    top: 2px;
+    right: 28px;
+
+}
+
+.products__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.products__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 23px 30px;
+    background: rgba(35, 35, 35, .8);
+    font-size: 15px;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform .4s linear;
+}
+
+.products__item:hover .products__desc {
+    transform: translateY(0%);
+}
+
+.products__desc-text {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.products__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
